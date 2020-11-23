@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "908c1428-689d-4659-a579-e8cbcd7df9a3",
+		"_postman_id": "6fbd1c5b-dba9-46bc-9d56-5e4670123a0b",
 		"name": "Tesla API  Open API Specification (Unofficial)",
 		"description": "Tesla API Open API Spec (Unofficial)\n\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -38,10 +38,8 @@
 													],
 													"variable": [
 														{
-															"id": "a5405a28-268c-4e5d-a985-8e8fa8b7843a",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -49,52 +47,6 @@
 												"description": "Information on the state of charge in the battery and its various settings.\nhttps://tesla-api.timdorr.com/vehicle/state/chargestate"
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "GET",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/data_request/charge_state",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"data_request",
-																"charge_state"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -140,6 +92,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"response\": {\n  \"battery_heater_on\": false,\n  \"battery_level\": 64,\n  \"battery_range\": 167.96,\n  \"charge_current_request\": 48,\n  \"charge_current_request_max\": 48,\n  \"charge_enable_request\": true,\n  \"charge_energy_added\": 12.41,\n  \"charge_limit_soc\": 90,\n  \"charge_limit_soc_max\": 100,\n  \"charge_limit_soc_min\": 50,\n  \"charge_limit_soc_std\": 90,\n  \"charge_miles_added_ideal\": 50,\n  \"charge_miles_added_rated\": 40,\n  \"charge_port_cold_weather_mode\": false,\n  \"charge_port_door_open\": false,\n  \"charge_port_latch\": \"Engaged\",\n  \"charge_rate\": 0,\n  \"charge_to_max_range\": false,\n  \"charger_actual_current\": 0,\n  \"charger_pilot_current\": 48,\n  \"charger_power\": 0,\n  \"charger_voltage\": 0,\n  \"charging_state\": \"Disconnected\",\n  \"conn_charge_cable\": \"<invalid>\",\n  \"est_battery_range\": 116.67,\n  \"fast_charger_brand\": \"<invalid>\",\n  \"fast_charger_present\": false,\n  \"fast_charger_type\": \"<invalid>\",\n  \"ideal_battery_range\": 209.95,\n  \"managed_charging_active\": false,\n  \"managed_charging_user_canceled\": false,\n  \"max_range_charge_counter\": 0,\n  \"minutes_to_full_charge\": 0,\n  \"not_enough_power_to_heat\": false,\n  \"scheduled_charging_pending\": false,\n  \"time_to_full_charge\": 0,\n  \"timestamp\": 1543187621530,\n  \"trip_charging\": false,\n  \"usable_battery_level\": 64\n }\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/data_request/charge_state",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"data_request",
+																"charge_state"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -163,10 +161,8 @@
 													],
 													"variable": [
 														{
-															"id": "92698ab5-0bf7-47db-b7dd-fc013478288c",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -174,52 +170,6 @@
 												"description": "Information on the current internal temperature and climate control system.\nhttps://tesla-api.timdorr.com/vehicle/state/climatestate"
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "GET",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/data_request/climate_state",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"data_request",
-																"climate_state"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"response\": {\n  \"battery_heater\": false,\n  \"battery_heater_no_power\": false,\n  \"climate_keeper_mode\": \"off\",\n  \"defrost_mode\": 0,\n  \"driver_temp_setting\": 22.8,\n  \"fan_status\": 0,\n  \"inside_temp\": 27,\n  \"is_auto_conditioning_on\": false,\n  \"is_climate_on\": false,\n  \"is_front_defroster_on\": false,\n  \"is_preconditioning\": false,\n  \"is_rear_defroster_on\": false,\n  \"left_temp_direction\": -232,\n  \"max_avail_temp\": 28,\n  \"min_avail_temp\": 15,\n  \"outside_temp\": 23,\n  \"passenger_temp_setting\": 22.8,\n  \"remote_heater_control_enabled\": false,\n  \"right_temp_direction\": -232,\n  \"seat_heater_left\": 0,\n  \"seat_heater_right\": 0,\n  \"side_mirror_heaters\": false,\n  \"timestamp\": 1604977244530,\n  \"wiper_blade_heater\": false\n }\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -265,6 +215,52 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/data_request/climate_state",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"data_request",
+																"climate_state"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"response\": {\n  \"battery_heater\": false,\n  \"battery_heater_no_power\": false,\n  \"climate_keeper_mode\": \"off\",\n  \"defrost_mode\": 0,\n  \"driver_temp_setting\": 22.8,\n  \"fan_status\": 0,\n  \"inside_temp\": 27,\n  \"is_auto_conditioning_on\": false,\n  \"is_climate_on\": false,\n  \"is_front_defroster_on\": false,\n  \"is_preconditioning\": false,\n  \"is_rear_defroster_on\": false,\n  \"left_temp_direction\": -232,\n  \"max_avail_temp\": 28,\n  \"min_avail_temp\": 15,\n  \"outside_temp\": 23,\n  \"passenger_temp_setting\": 22.8,\n  \"remote_heater_control_enabled\": false,\n  \"right_temp_direction\": -232,\n  \"seat_heater_left\": 0,\n  \"seat_heater_right\": 0,\n  \"side_mirror_heaters\": false,\n  \"timestamp\": 1604977244530,\n  \"wiper_blade_heater\": false\n }\n}"
 												}
 											]
 										},
@@ -288,10 +284,8 @@
 													],
 													"variable": [
 														{
-															"id": "db8b4af9-fa68-4768-97df-527c705daebb",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -413,10 +407,8 @@
 													],
 													"variable": [
 														{
-															"id": "436f0fb6-8cc5-48d1-aad5-b4c33e0dab54",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -538,10 +530,8 @@
 													],
 													"variable": [
 														{
-															"id": "33b1e3dd-36ae-432e-904c-45afb85419cc",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -663,10 +653,8 @@
 													],
 													"variable": [
 														{
-															"id": "0b0c19e9-d05c-4d98-a3e9-595f89a97ea9",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -795,10 +783,8 @@
 													],
 													"variable": [
 														{
-															"id": "f7e17585-2883-49ec-90e3-231335fc55de",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -920,10 +906,8 @@
 													],
 													"variable": [
 														{
-															"id": "3967c95e-9fab-40c3-b627-b1bb661c12bd",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -931,52 +915,6 @@
 												"description": "Flashes the headlights once."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/flash_lights",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"flash_lights"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -1022,6 +960,52 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/flash_lights",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"flash_lights"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -1052,10 +1036,8 @@
 													],
 													"variable": [
 														{
-															"id": "27ec6df3-2087-4c29-9e80-9c2f7783124c",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1201,10 +1183,8 @@
 													],
 													"variable": [
 														{
-															"id": "1e2d124e-65da-41c1-aa78-76bf9e700479",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1353,10 +1333,8 @@
 													],
 													"variable": [
 														{
-															"id": "b770c46d-9015-4c20-a98b-abe3d85077d0",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1364,58 +1342,6 @@
 												"description": "Sets the maximum speed allowed when Speed Limit Mode is active."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/speed_limit_set_limit?limit_mph=<number>",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"speed_limit_set_limit"
-															],
-															"query": [
-																{
-																	"key": "limit_mph",
-																	"value": "<number>"
-																}
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -1467,6 +1393,58 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/speed_limit_set_limit?limit_mph=<number>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"speed_limit_set_limit"
+															],
+															"query": [
+																{
+																	"key": "limit_mph",
+																	"value": "<number>"
+																}
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -1497,10 +1475,8 @@
 													],
 													"variable": [
 														{
-															"id": "1f224a62-8f7d-4d53-ab2d-19be6d08d4e6",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1641,10 +1617,8 @@
 													],
 													"variable": [
 														{
-															"id": "b63d766c-ee5f-4db8-8108-1e6e2220ac82",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1785,10 +1759,8 @@
 													],
 													"variable": [
 														{
-															"id": "6cbc4034-8b94-4d8c-8d23-1dff6601ef94",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -1934,10 +1906,8 @@
 													],
 													"variable": [
 														{
-															"id": "a63ea832-863e-4f83-8726-2df296d6c248",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2079,10 +2049,8 @@
 													],
 													"variable": [
 														{
-															"id": "a1f60fb6-9ed6-443a-bd17-eb60965fd616",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2090,52 +2058,6 @@
 												"description": "Clears the currently set PIN for Valet Mode when deactivated. A new PIN will be required when activating again."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/reset_valet_pin",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"reset_valet_pin"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -2181,6 +2103,52 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/reset_valet_pin",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"reset_valet_pin"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -2223,10 +2191,8 @@
 													],
 													"variable": [
 														{
-															"id": "310a42f8-d31c-4336-9666-36c15476382d",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2234,62 +2200,6 @@
 												"description": "Turns sentry mode on or off."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"body": {
-															"mode": "raw",
-															"raw": "{}"
-														},
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/set_sentry_mode?on=<boolean>",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"set_sentry_mode"
-															],
-															"query": [
-																{
-																	"key": "on",
-																	"value": "<boolean>"
-																}
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -2345,6 +2255,62 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{}"
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/set_sentry_mode?on=<boolean>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"set_sentry_mode"
+															],
+															"query": [
+																{
+																	"key": "on",
+																	"value": "<boolean>"
+																}
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -2368,10 +2334,8 @@
 													],
 													"variable": [
 														{
-															"id": "113b3096-876c-4ad2-b835-e4ec36ce21f7",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2493,10 +2457,8 @@
 													],
 													"variable": [
 														{
-															"id": "78e70536-58ae-4b44-b386-2b0cd2a9eb20",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2504,52 +2466,6 @@
 												"description": "Locks the doors to the car. Retracts the handles on the S and X, if they are extended."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/door_lock",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"door_lock"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -2595,6 +2511,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/door_lock",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"door_lock"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -2625,10 +2587,8 @@
 													],
 													"variable": [
 														{
-															"id": "0cf64094-342c-46fc-acab-cf3121bc0319",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2779,10 +2739,8 @@
 													],
 													"variable": [
 														{
-															"id": "48012a3c-35e5-416b-a6f7-3dcd5d7a2c1e",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2790,66 +2748,6 @@
 												"description": "Controls the windows. Will vent or close all windows simultaneously.\nlat and lon values must be near the current location of the car for close operation to succeed. For vent, the lat and lon values are ignored, and may both be 0 (which has been observed from the app itself)."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/window_control?command=<string>&lat=<number>&lon=<number>",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"window_control"
-															],
-															"query": [
-																{
-																	"key": "command",
-																	"value": "<string>"
-																},
-																{
-																	"key": "lat",
-																	"value": "<number>"
-																},
-																{
-																	"key": "lon",
-																	"value": "<number>"
-																}
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -2909,6 +2807,66 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/window_control?command=<string>&lat=<number>&lon=<number>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"window_control"
+															],
+															"query": [
+																{
+																	"key": "command",
+																	"value": "<string>"
+																},
+																{
+																	"key": "lat",
+																	"value": "<number>"
+																},
+																{
+																	"key": "lon",
+																	"value": "<number>"
+																}
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -2939,10 +2897,8 @@
 													],
 													"variable": [
 														{
-															"id": "c9847285-5dc1-477b-a11b-8b62be455895",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -2950,58 +2906,6 @@
 												"description": "Controls the panoramic sunroof on the Model S.\nNote: There were state options for open (100%), comfort (~80%), and move (combined with a percent parameter), but they have since been disabled server side. It is unknown if they will return at a later time."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/sun_roof_control?state=<string>",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"sun_roof_control"
-															],
-															"query": [
-																{
-																	"key": "state",
-																	"value": "<string>"
-																}
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -3053,6 +2957,58 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/sun_roof_control?state=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"sun_roof_control"
+															],
+															"query": [
+																{
+																	"key": "state",
+																	"value": "<string>"
+																}
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -3076,10 +3032,8 @@
 													],
 													"variable": [
 														{
-															"id": "e0cdc58a-87fc-4367-ae09-b0ea70dde383",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3201,10 +3155,8 @@
 													],
 													"variable": [
 														{
-															"id": "e01a894f-e73b-47d1-bc2b-8048f321394f",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3326,10 +3278,8 @@
 													],
 													"variable": [
 														{
-															"id": "6e72bb9c-18a9-423a-9d6f-ed99b40e467f",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3337,52 +3287,6 @@
 												"description": "If the car is plugged in but not currently charging, this will start it charging."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_start",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"charge_start"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -3428,6 +3332,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_start",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"charge_start"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -3451,10 +3401,8 @@
 													],
 													"variable": [
 														{
-															"id": "2a54334d-a363-49dc-8520-68c98bb0128d",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3576,10 +3524,8 @@
 													],
 													"variable": [
 														{
-															"id": "ee8c8504-1cd9-448e-87c8-0f25ec944c57",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3587,52 +3533,6 @@
 												"description": "Sets the charge limit to \"standard\" or ~90%."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_standard",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"charge_standard"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -3678,6 +3578,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_standard",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"charge_standard"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -3701,10 +3647,8 @@
 													],
 													"variable": [
 														{
-															"id": "f2999be3-cc0f-4265-a1c5-d0c68c7aa46d",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3712,52 +3656,6 @@
 												"description": "Sets the charge limit to \"max range\" or 100%."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_max_range",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"charge_max_range"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -3803,6 +3701,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/charge_max_range",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"charge_max_range"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -3826,10 +3770,8 @@
 													],
 													"variable": [
 														{
-															"id": "b660d524-98a5-4ff6-810d-316661176bdf",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3951,10 +3893,8 @@
 													],
 													"variable": [
 														{
-															"id": "a7d125b8-e152-4155-96f1-622e15f5555e",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -3962,52 +3902,6 @@
 												"description": "Start the climate control (HVAC) system. Will cool or heat automatically, depending on set temperature."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/auto_conditioning_start",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"auto_conditioning_start"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -4053,6 +3947,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/auto_conditioning_start",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"auto_conditioning_start"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -4076,10 +4016,8 @@
 													],
 													"variable": [
 														{
-															"id": "94c5391d-72d7-45a8-8475-932e167b9e1e",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4213,10 +4151,8 @@
 													],
 													"variable": [
 														{
-															"id": "e39cca69-0274-48ee-8442-266110b587e9",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4224,62 +4160,6 @@
 												"description": "Sets the target temperature for the climate control (HVAC) system.\nNote: The parameters are always in celsius, regardless of the region the car is in or the display settings of the car."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/set_temps?driver_temp=<number>&passenger_temp=<number>",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"set_temps"
-															],
-															"query": [
-																{
-																	"key": "driver_temp",
-																	"value": "<number>"
-																},
-																{
-																	"key": "passenger_temp",
-																	"value": "<number>"
-																}
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -4335,6 +4215,62 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/set_temps?driver_temp=<number>&passenger_temp=<number>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"set_temps"
+															],
+															"query": [
+																{
+																	"key": "driver_temp",
+																	"value": "<number>"
+																},
+																{
+																	"key": "passenger_temp",
+																	"value": "<number>"
+																}
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -4365,10 +4301,8 @@
 													],
 													"variable": [
 														{
-															"id": "1dda9351-7f0b-46f8-b750-db66a2b27517",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4514,10 +4448,8 @@
 													],
 													"variable": [
 														{
-															"id": "3e8793ef-c1d7-4c9f-b627-aec8727da5b0",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4666,10 +4598,8 @@
 													],
 													"variable": [
 														{
-															"id": "275096c9-6141-4ad5-b8c4-28ef4408b7c4",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4803,10 +4733,8 @@
 													],
 													"variable": [
 														{
-															"id": "18bc6783-29d9-4c67-8436-67d77f234a46",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -4814,52 +4742,6 @@
 												"description": "Toggles the media between playing and paused. For the radio, this mutes or unmutes the audio."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_toggle_playback",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"media_toggle_playback"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -4905,6 +4787,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_toggle_playback",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"media_toggle_playback"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -4928,10 +4856,8 @@
 													],
 													"variable": [
 														{
-															"id": "cbf48bb9-673b-4080-bf13-73163da01d3b",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5053,10 +4979,8 @@
 													],
 													"variable": [
 														{
-															"id": "761580c1-f0a9-4586-ad47-4ff97c0f048c",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5064,52 +4988,6 @@
 												"description": "Skips to the previous track in the current playlist. Does nothing for streaming from Stitcher."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_prev_track",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"media_prev_track"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -5155,6 +5033,52 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_prev_track",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"media_prev_track"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -5178,10 +5102,8 @@
 													],
 													"variable": [
 														{
-															"id": "1b946162-b231-4855-9878-7a9cf694d15d",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5303,10 +5225,8 @@
 													],
 													"variable": [
 														{
-															"id": "755748ca-253b-4288-b7f5-3eb4a96f24e8",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5428,10 +5348,8 @@
 													],
 													"variable": [
 														{
-															"id": "e8a41bda-a8ff-478b-93db-c34f1542522c",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5439,52 +5357,6 @@
 												"description": "Turns up the volume of the media system."
 											},
 											"response": [
-												{
-													"name": "OK",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_volume_up",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"media_volume_up"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "OK",
-													"code": 200,
-													"_postman_previewlanguage": "json",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "application/json"
-														}
-													],
-													"cookie": [],
-													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
-												},
 												{
 													"name": "Unauthorized",
 													"originalRequest": {
@@ -5530,6 +5402,52 @@
 													],
 													"cookie": [],
 													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/media_volume_up",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"media_volume_up"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
 												}
 											]
 										},
@@ -5553,10 +5471,8 @@
 													],
 													"variable": [
 														{
-															"id": "e5bb9656-f529-41e6-835d-7bf8121d79cc",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5690,10 +5606,8 @@
 													],
 													"variable": [
 														{
-															"id": "9c603baa-ec10-4cd7-9c85-70da4fa345c9",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5701,56 +5615,6 @@
 												"description": "Sends a location for the car to start navigation or play a video in theatre mode.\nThese docs take from the Android app, which sends the data in JSON form. However, a urlencoded POST body will work as well. The basic format to a request looks like this:"
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"body": {
-															"mode": "raw",
-															"raw": "{\n    \"type\": \"share_ext_content_raw\",\n    \"value\": {\n        \"android.intent.extra.TEXT\": \"123 Main St, City, ST 12345\\n\\nhttps://goo.gl/maps/X\"\n    },\n    \"locale\": \"en-US\",\n    \"timestamp_ms\": \"1539465730\"\n}"
-														},
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/share",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"share"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -5800,6 +5664,56 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n    \"type\": \"share_ext_content_raw\",\n    \"value\": {\n        \"android.intent.extra.TEXT\": \"123 Main St, City, ST 12345\\n\\nhttps://goo.gl/maps/X\"\n    },\n    \"locale\": \"en-US\",\n    \"timestamp_ms\": \"1539465730\"\n}"
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/share",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"share"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										},
@@ -5830,10 +5744,8 @@
 													],
 													"variable": [
 														{
-															"id": "57db7baf-960f-430f-a788-af7fc02500bd",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5967,10 +5879,8 @@
 													],
 													"variable": [
 														{
-															"id": "1f643296-7460-4030-ae06-1ddc5641ac2b",
 															"key": "id",
 															"value": "<string>",
-															"type": "string",
 															"description": "(Required) "
 														}
 													]
@@ -5978,52 +5888,6 @@
 												"description": "Cancels a software update, if one is scheduled and has not yet started."
 											},
 											"response": [
-												{
-													"name": "Unauthorized",
-													"originalRequest": {
-														"method": "POST",
-														"header": [
-															{
-																"description": {
-																	"content": "Added as a part of security scheme: apikey",
-																	"type": "text/plain"
-																},
-																"key": "Authorization",
-																"value": "<API Key>"
-															}
-														],
-														"url": {
-															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/cancel_software_update",
-															"host": [
-																"{{baseUrl}}"
-															],
-															"path": [
-																"api",
-																"1",
-																"vehicles",
-																":id",
-																"command",
-																"cancel_software_update"
-															],
-															"variable": [
-																{
-																	"key": "id"
-																}
-															]
-														}
-													},
-													"status": "Unauthorized",
-													"code": 401,
-													"_postman_previewlanguage": "text",
-													"header": [
-														{
-															"key": "Content-Type",
-															"value": "text/plain"
-														}
-													],
-													"cookie": [],
-													"body": ""
-												},
 												{
 													"name": "OK",
 													"originalRequest": {
@@ -6069,6 +5933,52 @@
 													],
 													"cookie": [],
 													"body": "{\n \"reason\": \"Sample Response\",\n \"result\": true\n}"
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"description": {
+																	"content": "Added as a part of security scheme: apikey",
+																	"type": "text/plain"
+																},
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/1/vehicles/:id/command/cancel_software_update",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"1",
+																"vehicles",
+																":id",
+																"command",
+																"cancel_software_update"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
 												}
 											]
 										}
@@ -6094,10 +6004,8 @@
 											],
 											"variable": [
 												{
-													"id": "9cc01fda-1484-4b47-b22d-f6fb51587666",
 													"key": "id",
 													"value": "<string>",
-													"type": "string",
 													"description": "(Required) "
 												}
 											]
@@ -6214,10 +6122,8 @@
 											],
 											"variable": [
 												{
-													"id": "32b49468-4520-4a09-87f0-9d98e110f0c2",
 													"key": "id",
 													"value": "<string>",
-													"type": "string",
 													"description": "(Required) "
 												}
 											]
@@ -6336,10 +6242,8 @@
 											],
 											"variable": [
 												{
-													"id": "b981a86d-51f1-4123-98ff-b3ad6b271625",
 													"key": "id",
 													"value": "<string>",
-													"type": "string",
 													"description": "(Required) "
 												}
 											]
@@ -6347,51 +6251,6 @@
 										"description": "Whether mobile access is enabled."
 									},
 									"response": [
-										{
-											"name": "Unauthorized",
-											"originalRequest": {
-												"method": "GET",
-												"header": [
-													{
-														"description": {
-															"content": "Added as a part of security scheme: apikey",
-															"type": "text/plain"
-														},
-														"key": "Authorization",
-														"value": "<API Key>"
-													}
-												],
-												"url": {
-													"raw": "{{baseUrl}}/api/1/vehicles/:id/mobile_enabled",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"1",
-														"vehicles",
-														":id",
-														"mobile_enabled"
-													],
-													"variable": [
-														{
-															"key": "id"
-														}
-													]
-												}
-											},
-											"status": "Unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "text",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "text/plain"
-												}
-											],
-											"cookie": [],
-											"body": ""
-										},
 										{
 											"name": "OK",
 											"originalRequest": {
@@ -6436,6 +6295,51 @@
 											],
 											"cookie": [],
 											"body": "{\n \"response\": true\n}"
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": {
+															"content": "Added as a part of security scheme: apikey",
+															"type": "text/plain"
+														},
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/1/vehicles/:id/mobile_enabled",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"1",
+														"vehicles",
+														":id",
+														"mobile_enabled"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
 										}
 									]
 								},
@@ -6464,10 +6368,8 @@
 											],
 											"variable": [
 												{
-													"id": "230e76f4-e22e-4458-8f7b-59599231e1b0",
 													"key": "id",
 													"value": "<string>",
-													"type": "string",
 													"description": "(Required) "
 												}
 											]
@@ -6598,10 +6500,8 @@
 											],
 											"variable": [
 												{
-													"id": "b41ee70f-c864-4898-a2f5-d8d51bbbb8be",
 													"key": "id",
 													"value": "<string>",
-													"type": "string",
 													"description": "(Required) "
 												}
 											]
@@ -6609,51 +6509,6 @@
 										"description": "Wakes up the car from a sleeping state."
 									},
 									"response": [
-										{
-											"name": "Unauthorized",
-											"originalRequest": {
-												"method": "POST",
-												"header": [
-													{
-														"description": {
-															"content": "Added as a part of security scheme: apikey",
-															"type": "text/plain"
-														},
-														"key": "Authorization",
-														"value": "<API Key>"
-													}
-												],
-												"url": {
-													"raw": "{{baseUrl}}/api/1/vehicles/:id/wake_up",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"api",
-														"1",
-														"vehicles",
-														":id",
-														"wake_up"
-													],
-													"variable": [
-														{
-															"key": "id"
-														}
-													]
-												}
-											},
-											"status": "Unauthorized",
-											"code": 401,
-											"_postman_previewlanguage": "text",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "text/plain"
-												}
-											],
-											"cookie": [],
-											"body": ""
-										},
 										{
 											"name": "OK",
 											"originalRequest": {
@@ -6698,6 +6553,51 @@
 											],
 											"cookie": [],
 											"body": "{\n \"response\": {\n  \"id\": 12345678901234568,\n  \"vehicle_id\": 1234567890,\n  \"vin\": \"5YJSA11111111111\",\n  \"display_name\": \"Nikola 2.0\",\n  \"option_codes\": \"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS\",\n  \"tokens\": [\n   \"abcdef1234567890\",\n   \"1234567890abcdef\"\n  ],\n  \"state\": \"online\",\n  \"in_service\": false,\n  \"id_s\": \"12345678901234567\",\n  \"calendar_enabled\": true,\n  \"api_version\": 7\n }\n}"
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"description": {
+															"content": "Added as a part of security scheme: apikey",
+															"type": "text/plain"
+														},
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/1/vehicles/:id/wake_up",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"1",
+														"vehicles",
+														":id",
+														"wake_up"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
 										}
 									]
 								}
@@ -6708,26 +6608,6 @@
 						{
 							"name": "Vehicles",
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "key",
-											"value": "Authorization",
-											"type": "string"
-										},
-										{
-											"key": "value",
-											"value": true,
-											"type": "boolean"
-										},
-										{
-											"key": "in",
-											"value": "header",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [],
 								"url": {
@@ -6744,44 +6624,6 @@
 								"description": "Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)\nhttps://tesla-api.timdorr.com/api-basics/vehicles"
 							},
 							"response": [
-								{
-									"name": "OK",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"description": {
-													"content": "Added as a part of security scheme: apikey",
-													"type": "text/plain"
-												},
-												"key": "Authorization",
-												"value": "<API Key>"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/api/1/vehicles",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"api",
-												"1",
-												"vehicles"
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"body": "{\n \"response\": [\n  {\n   \"id\": 12345678901234568,\n   \"vehicle_id\": 1234567890,\n   \"vin\": \"5YJSA11111111111\",\n   \"display_name\": \"Nikola 2.0\",\n   \"option_codes\": \"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS\",\n   \"tokens\": [\n    \"abcdef1234567890\",\n    \"1234567890abcdef\"\n   ],\n   \"state\": \"online\",\n   \"in_service\": false,\n   \"id_s\": \"12345678901234567\",\n   \"calendar_enabled\": true,\n   \"api_version\": 7\n  }\n ],\n \"count\": 1\n}"
-								},
 								{
 									"name": "Unauthorized",
 									"originalRequest": {
@@ -6819,6 +6661,44 @@
 									],
 									"cookie": [],
 									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": {
+													"content": "Added as a part of security scheme: apikey",
+													"type": "text/plain"
+												},
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/1/vehicles",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"1",
+												"vehicles"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"response\": [\n  {\n   \"id\": 12345678901234568,\n   \"vehicle_id\": 1234567890,\n   \"vin\": \"5YJSA11111111111\",\n   \"display_name\": \"Nikola 2.0\",\n   \"option_codes\": \"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS\",\n   \"tokens\": [\n    \"abcdef1234567890\",\n    \"1234567890abcdef\"\n   ],\n   \"state\": \"online\",\n   \"in_service\": false,\n   \"id_s\": \"12345678901234567\",\n   \"calendar_enabled\": true,\n   \"api_version\": 7\n  }\n ],\n \"count\": 1\n}"
 								}
 							]
 						}
@@ -6941,7 +6821,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"grant_type\": \"<string>\",\n    \"client_id\": \"<string>\",\n    \"client_secret\": \"<string>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}",
+							"raw": "{\n    \"grant_type\": \"password\",\n    \"client_id\": \"{{clientid}}\",\n    \"client_secret\": \"{{clientsecret}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"{{password}}\"\n}",
 							"options": {
 								"raw": {}
 							}
@@ -7081,7 +6961,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"client_secret\": \"<string>\",\n    \"client_id\": \"<string>\",\n    \"grant_type\": \"<string>\",\n    \"refresh_token\": \"<string>\"\n}",
+							"raw": "{\n    \"client_secret\": \"{{clientsecret}}\",\n    \"client_id\": \"{{clientsecret}}\",\n    \"grant_type\": \"refresh_token\",\n    \"refresh_token\": \"<string>\"\n}",
 							"options": {
 								"raw": {}
 							}
@@ -7105,44 +6985,6 @@
 						"description": "Reflesh Access Token"
 					},
 					"response": [
-						{
-							"name": "OK",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"client_secret\": \"string\",\n    \"client_id\": \"string\",\n    \"grant_type\": \"refresh_token\",\n    \"refresh_token\": \"407001ceaed2bd70f853ea59c5940597bdc50daf3175afacb19129f0ac4e85a1\"\n}"
-								},
-								"url": {
-									"raw": "{{baseUrl}}/oauth/token?grant_type=refresh_token",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"oauth",
-										"token"
-									],
-									"query": [
-										{
-											"key": "grant_type",
-											"value": "refresh_token"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"access_token\": \"abc123\",\n \"token_type\": \"bearer\",\n \"expires_in\": 3888000,\n \"refresh_token\": \"cba321\",\n \"created_at\": 1538359034\n}"
-						},
 						{
 							"name": "Unauthorized",
 							"originalRequest": {
@@ -7180,6 +7022,44 @@
 							],
 							"cookie": [],
 							"body": "{\n \"error\": \"invalid_grant\",\n \"error_description\": \"The provided authorization grant is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.\"\n}"
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"client_secret\": \"string\",\n    \"client_id\": \"string\",\n    \"grant_type\": \"refresh_token\",\n    \"refresh_token\": \"407001ceaed2bd70f853ea59c5940597bdc50daf3175afacb19129f0ac4e85a1\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/oauth/token?grant_type=refresh_token",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"oauth",
+										"token"
+									],
+									"query": [
+										{
+											"key": "grant_type",
+											"value": "refresh_token"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"access_token\": \"abc123\",\n \"token_type\": \"bearer\",\n \"expires_in\": 3888000,\n \"refresh_token\": \"cba321\",\n \"created_at\": 1538359034\n}"
 						}
 					]
 				}
@@ -7201,7 +7081,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b7062863-76d4-4c08-9c5e-0a4a4cb6262a",
+				"id": "24540acc-828b-48b0-82b2-390a541dc6e4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7211,7 +7091,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "930bbb08-b955-4d66-90d9-d3c2a732efd1",
+				"id": "3ae7d82c-9a4c-4b6a-af28-472c1eff5885",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -7221,9 +7101,29 @@
 	],
 	"variable": [
 		{
-			"id": "958dd898-79b9-4efe-b0f7-37886371aac2",
+			"id": "2baad0f9-3d70-411d-b05a-ec6d7dc681bd",
 			"key": "baseUrl",
 			"value": "https://owner-api.teslamotors.com"
+		},
+		{
+			"id": "7dbbf47c-cccd-42ac-951d-19225f035af8",
+			"key": "email",
+			"value": "YOUR_TESLA_ACCOUNT"
+		},
+		{
+			"id": "b657e919-7550-496d-8207-a013bb3eae24",
+			"key": "password",
+			"value": "YOUR_TESLA_ACCOUNT_PASSWORD"
+		},
+		{
+			"id": "35a9ca20-5e00-48f7-bcf5-4c00377482cd",
+			"key": "clientid",
+			"value": "ENTER_CLIENT_ID"
+		},
+		{
+			"id": "4351b8ad-2e05-4bb6-92a2-2cdfd2b1518b",
+			"key": "clientsecret",
+			"value": "ENTER_CLIENT_SECRET"
 		}
 	],
 	"protocolProfileBehavior": {}
