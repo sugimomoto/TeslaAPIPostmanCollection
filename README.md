@@ -31,7 +31,7 @@ Access Tokens can be expired by changing your Tesla account password.
 4. Paste the following two URLs and choose Import after each.
 
 ```url
-https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%20Environment.postman_environment.json
+https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%20Postman%20Collection%20(Unofficial).postman_collection.json
 ```
 
 ```url
