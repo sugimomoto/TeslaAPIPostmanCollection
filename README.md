@@ -1,8 +1,8 @@
-![mainimage](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/mainimage.png)
-
 # What is this?
 
 This is Postman collection for Tesla API (unoficial) to get started in minutes.
+
+![mainimage](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/mainimage.png)
 
 You can find Tesla API details at the following URL.
 
@@ -23,6 +23,8 @@ Access Tokens can be expired by changing your Tesla account password.
 1. Download and register for [Postman](https://www.postman.com/).
 
 2. Choose File | Import ....
+
+![import](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/import.png)
 
 3. Select Import From Link.
 
@@ -65,5 +67,7 @@ Client Id and Client Secret are at the following URL.
 You are now up and running with the Tesla API collections.
 
 By the way, Alomost requests have required your Tesla Id. You can find Id at Vehicles or Products Endpoint so you should request this endpoint first.
+
+![getid](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/getid.png)
 
 Enjoy your Tesla API life!
