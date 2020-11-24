@@ -1,8 +1,8 @@
 # What is this?
 
-This is Postman collection for Tesla API (unoficial) to get started in minutes.
+This is Postman collection for Tesla API (unoficial).
 
-![mainimage](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/mainimage.png)
+<img src="https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/mainimage.png" style="max-width:80%;">
 
 You can find Tesla API details at the following URL.
 
