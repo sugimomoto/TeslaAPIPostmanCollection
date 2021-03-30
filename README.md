@@ -2,7 +2,7 @@
 
 This is Postman collection for Tesla API (unoficial).
 
-<img src="https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/mainimage.png" style="max-width:80%;">
+![overview](/Images/mainimage.png)
 
 You can find Tesla API details at the following URL.
 
@@ -10,9 +10,7 @@ You can find Tesla API details at the following URL.
 
 # Notes
 
-If you use this API, This API have to set Tesla account email and password, Also the access token for this API. 
-
-You can get Access Token by this postman collection, However this access token can many control your tesla's functions.
+You can get an Access Token for the Tesla API by using this postman collection. This access token can control your tesla's functions.
 
 Access Tokens can be expired by changing your Tesla account password.
 
@@ -24,7 +22,7 @@ Access Tokens can be expired by changing your Tesla account password.
 
 2. Choose File | Import ....
 
-![import](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/import.png)
+![import](/Images/import.png)
 
 3. Select Import From Link.
 
@@ -38,7 +36,7 @@ https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%2
 https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%20Environment.postman_environment.json
 ```
 
-![importlink](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/importurl.png)
+![importlink](/Images/importurl.png)
 
 ## Set up Environment and Access Token
 
@@ -46,28 +44,38 @@ https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%2
 
 2. Select Tesla API environment.
 
-![selectenvironment](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/selectenvironment.png)
+![selectenvironment](/Images/selectenvironment.png)
 
 3. Choose the eye icon to the right and then choose Edit.
 
-Enter your Tesla Login Account email and password. Also, Enter Client Id and Client Secret for Tesla App.
+Enter a random string of characters for the OAuth2 State. Enter the Client ID, and Client Secret for the Tesla App.
 
 Client Id and Client Secret are at the following URL.
 
 [Tesla API OAuth](https://www.teslaapi.io/authentication/oauth)
 
-![enteraccount](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/enteraccount.png)
+![enteraccount](/Images/enteraccount.png)
 
-4. Then, Choose oauth/Get Access Token request. Click SEND buttone and you can get access token from Tesla API.
+4. Open Get Access Token. Click on the Authorization tab. Scroll down and click Get New Access Token.
 
-![oauth](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/oauth.png)
+![authorizationtab](/Images/authorizationtab.png)
 
-5. Enter this access token at your Tesla API environment.
+5. Sign into your Tesla Account.
 
-You are now up and running with the Tesla API collections.
+![signintotesla](/Images/teslasignin.png)
 
-By the way, Alomost requests have required your Tesla Id. You can find Id at Vehicles or Products Endpoint so you should request this endpoint first.
+6. Click on Use Token. You can safely delete any expired tokens from Postman (indicated with strikethrough text).
 
-![getid](https://github.com/sugimomoto/TeslaAPIPostmanCollection/blob/master/Images/getid.png)
+![usetoken](/Images/usetoken.png)
+
+7. Click Send to obtain an Access Token.
+
+![oauth](/Images/oauth.png)
+
+You are now up and running with the Tesla API collections. To refresh your token, repeate steps 4 through 7.
+
+By the way, most requests have required your Tesla Id. You can find Id at Vehicles or Products Endpoint so you should request this endpoint first.
+
+![getid](/Images/getid.png)
 
 Enjoy your Tesla API life!
