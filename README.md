@@ -46,12 +46,9 @@ https://github.com/sugimomoto/TeslaAPIPostmanCollection/raw/master/Tesla%20API%2
 
 ![selectenvironment](/Images/selectenvironment.png)
 
-3. Choose the eye icon to the right and then choose Edit.
-
-Enter a random string of characters for the OAuth2 State. Enter the Client ID, and Client Secret for the Tesla App.
-
-Client Id and Client Secret are at the following URL.
-
+3. Choose the eye icon to the right and then choose Edit.  
+Enter a random string of characters for the OAuth2 State. Enter the Client ID, and Client Secret for the Tesla App.  
+Client Id and Client Secret are at the following URL.  
 [Tesla API OAuth](https://www.teslaapi.io/authentication/oauth)
 
 ![enteraccount](/Images/enteraccount.png)
@@ -68,11 +65,11 @@ Client Id and Client Secret are at the following URL.
 
 ![usetoken](/Images/usetoken.png)
 
-7. Click Send to obtain an Access Token.
+7. Click Send to obtain an Access Token. You are now up and running with the Tesla API collections.
 
 ![oauth](/Images/oauth.png)
 
-You are now up and running with the Tesla API collections. To refresh your token, repeate steps 4 through 7.
+To refresh your token, repeat steps 4 through 7.  
 
 By the way, most requests have required your Tesla Id. You can find Id at Vehicles or Products Endpoint so you should request this endpoint first.
 
